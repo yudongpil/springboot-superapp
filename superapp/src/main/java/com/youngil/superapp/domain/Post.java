@@ -23,7 +23,7 @@ public class Post extends BaseEntity {
 
     @ManyToOne
     @JoinColumn(name="user_id")
-    private User user;
+    private Users users;
 
     @ManyToOne
     @JoinColumn(name="board_id")

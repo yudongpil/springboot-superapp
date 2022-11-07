@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Getter
 @Entity
 @NoArgsConstructor
-public class User extends BaseEntity{
+public class Users extends BaseEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -23,6 +23,6 @@ public class User extends BaseEntity{
 
     @ManyToOne
     @JoinColumn(name="like_id")
-    private Like like;
+    private Likes like;
 
 }
